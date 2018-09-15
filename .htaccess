@@ -1,0 +1,11 @@
+Options -Multiviews
+
+RewriteEngine On
+RewriteBase /
+
+# ** Forze domain and SSL
+#RewriteCond %{HTTP_HOST} !^subdomain\.domain\.extension$
+#RewriteRule ^(.*) https://subdomain.domain.extension/$1 [R=301,L]
+
+# ** Rewrite Page rules
+RewriteRule ^home$ index.php?web=home [L]
